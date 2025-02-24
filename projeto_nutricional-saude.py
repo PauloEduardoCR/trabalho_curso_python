@@ -279,5 +279,7 @@ while True:
           
            
              
-            
+     #Equipe.
+#Paulo Eduardo Carvalho Rodrigues
+#Carlos Kauan Marques de Freitas
 
