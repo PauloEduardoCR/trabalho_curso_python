@@ -13,8 +13,8 @@ for lista_temperatura in escala_Temperatura:
 print("")
 
 temperatura = float(input("Diga a temperatura ->   "))
-opcao_1 = input("Digite qual a escala de temperatura c/f/k->    ").lower()
-opcao_2 = input("Para qual escala de temperatura transformar a opção anterior ? ->    ").lowee()
+opcao_1 = input("Digite qual a escala de temperatura c/f/k->    ").strip().lower()
+opcao_2 = input("Para qual escala de temperatura transformar a opção anterior ? ->    ").strip().lower()
 
 #Calculo de Celsius para Fahrenheit.
 if opcao_1 =="c" and opcao_2 =="f":
@@ -31,7 +31,7 @@ elif opcao_1 =="f" and opcao_2 =="c":
     celsius = (temperatura - 32)/1.8
     print("  {}°  fahrenheit é  {:.2f}° Celsius" .format(temperatura,celsius))
 
-#Calculo de Fahrenheit para Kevin.
+#Calculo de Fahrenheit para Kelvin.
 elif opcao_1 =="f" and opcao_2 =="k":
     fahrenheit_kelvin = (temperatura - 32) * 5/9 + 273.15
     print("  {}°  fahrenheit é  {:.2f}° Kelvin".format(temperatura,fahrenheit_kelvin))
@@ -45,3 +45,5 @@ elif opcao_1 =="k" and opcao_2 =="f":
 elif opcao_1 =="k" and opcao_2 =="c":
     kelvin_celsius = (temperatura - 273.15)
     print("  {}°  Kelvin é  {:.2f}° Celsius".format(temperatura,kelvin_celsius))
+else:
+  print("      !   Transformação Invalida, tente novamente e lembre-se de usar apenas c/f/k")
