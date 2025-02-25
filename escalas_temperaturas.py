@@ -13,8 +13,8 @@ for lista_temperatura in escala_Temperatura:
 print("")
 
 temperatura = float(input("Diga a temperatura ->   "))
-opcao_1 = input("Digite qual a escala de temperatura c/f/k->    ")
-opcao_2 = input("Para qual escala de temperatura transformar a opção anterior ? ->    ")
+opcao_1 = input("Digite qual a escala de temperatura c/f/k->    ").lower()
+opcao_2 = input("Para qual escala de temperatura transformar a opção anterior ? ->    ").lowee()
 
 #Calculo de Celsius para Fahrenheit.
 if opcao_1 =="c" and opcao_2 =="f":
